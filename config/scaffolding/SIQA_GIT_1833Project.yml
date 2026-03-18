@@ -8,10 +8,35 @@ packages:
   gitUsername: rimabarman
   gitBranch: main
 - name: WmJDBCAdapter
+  version: 10.3.0.0.34
   wpmServer: https://packages.webmethods.io
   wpmRegistry: licensed
 services:
 - serviceName: project.siqa_git_1833.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections:Database_1
+  packages:
+  - name: SIQA_GIT_1833Project
+    version: "1.0"
+  - name: WmJDBCAdapter
+    version: 10.3.0.0.34
+    wpmServer: https://packages.webmethods.io
+    wpmRegistry: licensed
+- serviceName: project.siqa_git_1833.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.operations.actions:Test_RestConn
+  packages:
+  - name: SIQA_GIT_1833Project
+    version: "1.0"
+  - name: WmJDBCAdapter
+    version: 10.3.0.0.34
+    wpmServer: https://packages.webmethods.io
+    wpmRegistry: licensed
+- serviceName: project.siqa_git_1833.integrations:Call_refData
+  packages:
+  - name: SIQA_GIT_1833Project
+    version: "1.0"
+  - name: WmJDBCAdapter
+    version: 10.3.0.0.34
+    wpmServer: https://packages.webmethods.io
+    wpmRegistry: licensed
+- serviceName: project.siqa_git_1833.referencedata:refData
   packages:
   - name: SIQA_GIT_1833Project
     version: "1.0"
@@ -60,10 +85,6 @@ services:
   - name: WmPublic
     version: 12.1.0.0.800
 - serviceName: pub.string:bytesToString
-  packages:
-  - name: WmPublic
-    version: 12.1.0.0.800
-- serviceName: pub.alert:emit
   packages:
   - name: WmPublic
     version: 12.1.0.0.800
